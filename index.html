@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhumiDekho | India's #1 Real Estate App</title>
+    <meta name="description"
+        content="Find your dream property with BhumiDekho - India's most trusted real estate platform.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Header (App Bar) -->
+    <header id="main-header" class="app-header">
+        <div class="header-top">
+            <div class="logo">
+                <i class="fas fa-home-alt"></i>
+                <span>BhumiDekho</span>
+            </div>
+            <div class="profile-action" id="profile-action" onclick="navigate('login')">
+                <span id="user-name-h"
+                    style="font-size: 0.85rem; font-weight: 700; color: #333; margin-right: 8px; display: none;"></span>
+                <div class="profile-circle">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main id="app">
+        <!-- Dynamic Content Rendered Here -->
+    </main>
+
+    <!-- Bottom Navigation (Footer) -->
+    <footer class="nav-bottom">
+        <a href="#" class="nav-item active" data-page="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="nav-item" data-page="likes">
+            <i class="fas fa-heart"></i>
+            <span>Like</span>
+        </a>
+        <a href="#" class="nav-item" data-page="search">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </a>
+        <a href="#" class="nav-item" data-page="login">
+            <i class="fas fa-user"></i>
+            <span id="login-text">LOGIN</span>
+        </a>
+    </footer>
+
+    <!-- Overlay / Side Panels -->
+    <div id="side-panel" class="side-panel"></div>
+    <div id="modal-container" class="modal-container"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
